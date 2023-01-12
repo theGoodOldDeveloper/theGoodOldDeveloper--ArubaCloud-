@@ -14,19 +14,16 @@ app.use(express.static("public/css"));
 app.use(express.static("public/img"));
 
 app.get("/", (req, res) => {
-    /* res.send(
-        "<h1>Hello World! 😋 </h1><h2 style = 'color: blue'>Aruba cloud</h2>" +
-            "<p>Ha a port 8888 akkor js-ben kapta meg, ha 7777 akkor .env : </p><h3>" +
-            portFutott +
-            "</h3><h1 style = 'color: red'> Egyenlőre foreverrel !</h1><p style = 'color: green'>Lássuk a medvét ..."
-    ); */
     res.sendFile(__dirname + "/index.html");
+});
+app.get("/contact", (req, res) => {
+    res.sendFile(__dirname + "/contact.html");
 });
 
 app.listen(port, function () {
     console.log(
         "Az expressz elindult a http: // localhost:" +
-            port +
-            " helyen; a Ctrl-C megnyomásával zárja be a szervert."
+        port +
+        " helyen; a Ctrl-C megnyomásával zárja be a szervert."
     );
 });

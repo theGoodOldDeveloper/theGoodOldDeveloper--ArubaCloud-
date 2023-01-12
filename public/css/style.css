@@ -113,24 +113,19 @@ header {
 }
 
 .container-1{
-  /* background-image:url("https://images4.alphacoders.com/936/thumb-1920-936378.jpg");  */
   background-image:url("/Grimming.JPG");
 }
 .container-2{
-  /* background-image:url("http://4kwallpapers.com/images/walls/thumbs_2t/8085.jpg") */
   background-image:url("Ratrak.jpg")
 }
 .container-3{
-  /* background-image:url("https://c4.wallpaperflare.com/wallpaper/630/43/768/space-earth-sun-solar-system-wallpaper-preview.jpg") */
   background-image:url("DNC_1936_wm copy.jpg")
 }
 
 .container-4{
-  /* background-image:url("https://www.hdwallpapers.in/download/purple_planet_and_purple_space_hd_purple-2560x1440.jpg") */
   background-image:url("Careobikorr.jpg")
 }
 .container-5{
-  /* background-image:url("https://w0.peakpx.com/wallpaper/445/837/HD-wallpaper-night-moon-galaxy-moon-night-space.jpg") */
   background-image:url("Kékes at Christmas.jpg")
 }
 .mainBTN{
@@ -144,4 +139,12 @@ header {
   text-shadow:3px 3px black;
   transition:all 0.5s linear;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.copyRight{
+  text-align: right;
+  position: relative;
+  bottom: -10%;
+  right: 10;
+  width: 90%;
+  /* border: 3px solid #73AD21; */
 }
