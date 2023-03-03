@@ -13,6 +13,9 @@ document.getElementById('app-4').addEventListener('click', () => {
 document.getElementById('app-5').addEventListener('click', () => {
     window.location.href = 'http://thegoodolddeveloper.website:9999/'
 })
+document.getElementById('app-6').addEventListener('click', () => {
+    window.location.href = 'http://thegoodolddeveloper.website:5011/'
+})
 
 
 $(".mainBTN").mouseenter(function(){
