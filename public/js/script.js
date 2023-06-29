@@ -16,15 +16,18 @@ document.getElementById('app-5').addEventListener('click', () => {
 document.getElementById('app-6').addEventListener('click', () => {
     window.location.href = 'http://thegoodolddeveloper.website:5011/'
 })
+document.getElementById('app-7').addEventListener('click', () => {
+    window.location.href = 'http://thegoodolddeveloper.com:5001/'
+})
 
 
-$(".mainBTN").mouseenter(function(){
-  $(".mainBTN").css("color", "red");
-  $(".mainBTN").css("cursor", "pointer");
-  $(".mainBTN").css("font-size", "3rem");
+$(".mainBTN").mouseenter(function () {
+    $(".mainBTN").css("color", "red");
+    $(".mainBTN").css("cursor", "pointer");
+    $(".mainBTN").css("font-size", "3rem");
 });
-$(".mainBTN").mouseleave(function(){
-  $(".mainBTN").css("color", "white");
-  $(".mainBTN").css("font-size", "2.5rem");
+$(".mainBTN").mouseleave(function () {
+    $(".mainBTN").css("color", "white");
+    $(".mainBTN").css("font-size", "2.5rem");
 });
 

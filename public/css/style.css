@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration:none;
-  box-sizing:border-box;
+  text-decoration: none;
+  box-sizing: border-box;
 }
-body{
-  background-color:lightgrey;
+
+body {
+  background-color: lightgrey;
 }
 
 .hamburger-icon {
@@ -14,30 +15,31 @@ body{
 }
 
 header {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: darkslateblue;
 }
-.logo-text{
-  color:white;
+
+.logo-text {
+  color: white;
 }
 
-.hamburger-icon{
-  border:none;
-  background-color:transparent;
+.hamburger-icon {
+  border: none;
+  background-color: transparent;
 }
 
 .hamburger-icon .fa-bars,
-.hamburger-icon .fa-x{
-  color:white;
-  font-size:1rem;
-  cursor:pointer;
+.hamburger-icon .fa-x {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .hamburger-icon input[type="checkbox"] {
@@ -48,8 +50,9 @@ header {
   display: flex;
   gap: 1rem;
 }
-.navigation a{
-  color:white
+
+.navigation a {
+  color: white
 }
 
 
@@ -57,93 +60,112 @@ header {
   header {
     display: block;
   }
+
   .navigation {
-    height:0;
-    overflow:hidden;
+    height: 0;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
-    transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
+
   .logo {
     display: flex;
     justify-content: space-between;
   }
+
   .hamburger-icon {
     display: block;
   }
-  .fa-x{
-    display:none;
+
+  .fa-x {
+    display: none;
   }
+
   header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation {
     margin-top: 1rem;
-    height:100px;
+    height: 100px;
   }
+
   header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
-    display:none;
+    display: none;
   }
+
   header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
-    display:inline-block;
+    display: inline-block;
   }
 }
 
 
 /* Content CSS */
-.container{
-  height:100vh;
-  display:grid;
-  place-items:center;
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size:cover;
-}
-.container:nth-child(1){
-  margin-top:0;
+  background-size: cover;
 }
 
-.container p{
-  text-align:center;
-  font-size:3rem;
-  color:white;
-  text-shadow:2px 2px black;
-  transition:all 0.5s linear;
-}
-.container button{
-  color:white;
+.container:nth-child(1) {
+  margin-top: 0;
 }
 
-.container-1{
-  background-image:url("/Grimming.JPG");
-}
-.container-2{
-  background-image:url("Ratrak.jpg")
-}
-.container-3{
-  background-image:url("DNC_1936_wm copy.jpg")
+.container p {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px black;
+  transition: all 0.5s linear;
 }
 
-.container-4{
-  background-image:url("Careobikorr.jpg")
+.container button {
+  color: white;
 }
-.container-5{
-  background-image:url("Kékes at Christmas.jpg")
+
+.container-1 {
+  background-image: url("/Grimming.JPG");
 }
-.container-6{
-  background-image:url("To be or not to be.jpg")
+
+.container-2 {
+  background-image: url("Ratrak.jpg")
 }
-.mainBTN{
+
+.container-3 {
+  background-image: url("DNC_1936_wm copy.jpg")
+}
+
+.container-4 {
+  background-image: url("Careobikorr.jpg")
+}
+
+.container-5 {
+  background-image: url("Kékes at Christmas.jpg")
+}
+
+.container-6 {
+  background-image: url("To be or not to be.jpg")
+}
+
+.container-7 {
+  background-image: url("Gym Target.jpg")
+}
+
+.mainBTN {
   /* mix-blend-mode: difference; */
-  background-color:rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .4);
   /* opacity: 33%; */
   border-color: slategrey;
   padding: 1rem;
-  font-size:2.5rem;
+  font-size: 2.5rem;
   color: goldenrod;
-  text-shadow:3px 3px black;
-  transition:all 0.5s linear;
+  text-shadow: 3px 3px black;
+  transition: all 0.5s linear;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.copyRight{
+
+.copyRight {
   text-align: right;
   position: relative;
   bottom: -10%;
