@@ -152,6 +152,10 @@ header {
   background-image: url("Gym Target.jpg")
 }
 
+.container-8 {
+  background-image: url("Unusual exhibition in Paris (2006).jpg")
+}
+
 .mainBTN {
   /* mix-blend-mode: difference; */
   background-color: rgba(0, 0, 0, .4);

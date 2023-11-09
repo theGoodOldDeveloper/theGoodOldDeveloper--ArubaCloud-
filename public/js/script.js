@@ -19,6 +19,9 @@ document.getElementById('app-6').addEventListener('click', () => {
 document.getElementById('app-7').addEventListener('click', () => {
     window.location.href = 'http://thegoodolddeveloper.com:5001/'
 })
+document.getElementById('app-8').addEventListener('click', () => {
+    window.location.href = 'https://photovegh.synology.me/'
+})
 
 
 $(".mainBTN").mouseenter(function () {
