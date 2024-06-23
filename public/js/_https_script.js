@@ -1,20 +1,20 @@
 document.getElementById("app-1").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:7777/";
+  window.location.href = "http://thegoodolddeveloper.com:7777/";
 });
 document.getElementById("app-2").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:7766/";
+  window.location.href = "http://thegoodolddeveloper.com:7766/";
 });
 document.getElementById("app-3").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:3333/";
+  window.location.href = "http://thegoodolddeveloper.com:3333/";
 });
 document.getElementById("app-4").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:9876/";
+  window.location.href = "http://thegoodolddeveloper.com:9876/";
 });
 document.getElementById("app-5").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:9999/";
+  window.location.href = "http://thegoodolddeveloper.com:9999/";
 });
 document.getElementById("app-6").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:5011/";
+  window.location.href = "http://thegoodolddeveloper.com:5011/";
 });
 document.getElementById("app-7").addEventListener("click", () => {
   window.location.href = "http://217.13.101.72:5001/";
