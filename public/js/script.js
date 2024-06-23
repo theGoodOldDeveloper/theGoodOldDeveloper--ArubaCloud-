@@ -17,7 +17,7 @@ document.getElementById("app-6").addEventListener("click", () => {
   window.location.href = "http://80.211.204.154:5011/";
 });
 document.getElementById("app-7").addEventListener("click", () => {
-  window.location.href = "http://217.13.101.72:5001/";
+  window.location.href = "http://80.211.204.154:5001/";
 });
 document.getElementById("app-8").addEventListener("click", () => {
   window.location.href = "https://photovegh.synology.me/";
