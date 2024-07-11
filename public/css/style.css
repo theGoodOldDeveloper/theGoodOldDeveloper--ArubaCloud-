@@ -122,6 +122,13 @@ header {
   color: white;
 }
 
+.container-10 {
+  background-image: url("/Wild strawberries.jpg");
+}
+.container-0 {
+  background-image: url("/Blackberry.jpg");
+}
+
 .container-1 {
   background-image: url("/Grimming.JPG");
 }

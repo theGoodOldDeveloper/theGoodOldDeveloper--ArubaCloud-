@@ -1,3 +1,9 @@
+document.getElementById("app-10").addEventListener("click", () => {
+  window.location.href = "https://chat-my-gpt-rho.vercel.app/";
+});
+document.getElementById("app-0").addEventListener("click", () => {
+  window.location.href = "http://80.211.204.154:5123/";
+});
 document.getElementById("app-1").addEventListener("click", () => {
   window.location.href = "http://80.211.204.154:7777/";
 });
