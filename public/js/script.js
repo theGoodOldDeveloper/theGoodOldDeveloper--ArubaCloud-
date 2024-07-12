@@ -1,3 +1,27 @@
+// localStorage
+let lang = "";
+if (localStorage.getItem("language")) {
+  lang = localStorage.getItem("language");
+  //console.log("lang: 👍 ", lang);
+} else {
+  localStorage.setItem("language", "EN");
+  lang = localStorage.getItem("language");
+  //console.log("lang: 😊 ", lang);
+}
+const flagHU = `<img src="hu.png " alt="hu" width="60px" height="40px" />`;
+const flagEN = `<img src="gb.png " alt="hu" width="60px" height="40px" />`;
+/* const flagHU = `<img src="./public/img/hu.png " alt="hu" width="30px" height="20px" />`;
+const flagEN = `<img src="./public/img/gb.png " alt="hu" width="30px" height="20px" />`; */
+document.getElementById("langIcon").innerHTML = lang == "HU" ? flagEN : flagHU;
+
+let cTittle = [];
+let cTool = [];
+let cIndex = [];
+let cImage = [];
+
+HTMLcontentCode();
+render();
+
 document.getElementById("app-10").addEventListener("click", () => {
   window.location.href = "https://chat-my-gpt-rho.vercel.app/";
 });
@@ -32,6 +56,111 @@ document.getElementById("app-9").addEventListener("click", () => {
   window.location.href = "https://erikahorvath.com/";
 });
 
+function HTMLcontentCode() {
+  //console.log("lang 😍😍😍😍😍", lang);
+  //console.log("contentArrays 😈", cTittle, cTool, cImage, cIndex);
+
+  /* for (let i = 0; i < cIndex.length; i++) {
+    document
+      .getElementById("classContainer")
+      .setAttribute("class", `container-${cIndex[i]}`);
+    appendix = "app-" + cIndex[i];
+    console.log("APPINDEX:", appendix);
+    document.getElementById("appIndex").value = appendix;
+    document.getElementById("tittle").innerHTML = cTittle[i];
+    document.getElementById("tool").innerHTML = cTool[i];
+    document.getElementById("image").innerHTML = cImage[i];
+  } */
+  for (index of cIndex) {
+    //console.log("index: ", index);
+    document.getElementById(`tittle-${index}`).innerHTML = cTittle[index];
+    document.getElementById(`tool-${index}`).innerHTML = cTool[index];
+    document.getElementById(`image-${index}`).innerHTML = cImage[index];
+  }
+  /* let htmlContent = "";
+  for (index of cIndex) {
+    htmlContent += `<div class="container container-${index}">
+        <button class="mainBTN" id="app-${index}">
+          ${cTittle[index]}<br /><span
+            style="font-size: 1.5rem; color: bisque"
+            >${cTool[index]}
+          </span>
+        </button>
+        <p class="demo">${cImage[index]}<br /></p>
+        <div class="copyRight" style="font-size: 1.5rem; color: bisque">
+          ©photovegh
+        </div>
+      </div>`;
+  } */
+  //console.log("htmlContent: ", htmlContent);
+  /* return (document.getElementById("HTMLcode").innerHTML = htmlContent); */
+}
+
+function contentsTittle() {
+  if (lang == "EN") {
+    return [
+      "This is a code snippet repository...",
+      "This is a 'pub counter-terminal' for touchscreen...",
+      "This is the admin of the 'pub counter-terminal'...",
+      "This is the inventory taker at the 'pub counter-terminal'...",
+      "This is a REST API...",
+      "This is a BLOG...",
+      "This is an Address Book...",
+      "This is a Gym appointment booking...",
+      "This is a Web Shop...",
+      "This is wwwebPage...",
+      "This is a private ChatGPT assistant...",
+    ];
+  } else {
+    return [
+      "Ez egy privát repository...",
+      "Ez egy pultos terminál touchscreen-re...",
+      "Ez a pultos terminál ADMIN-ja...",
+      "Ez a pultos terminál leltár appja...",
+      "Ez egy REST API...",
+      "Ez egy személyes BLOG...",
+      "Ez egy Address Book...",
+      "Ez egy Gym időpontfoglaló...",
+      "Ez egy Web Shop...",
+      "Ez egy wwwebPage...",
+      "Ez egy privát ChatGPT asszisztens...",
+    ];
+  }
+}
+function contentsTool() {
+  return [
+    "(Next.js & Tailwind & SQLite3)",
+    "(login code 0, 11, 2 or 3)",
+    ".",
+    ".",
+    "(with MongoDB and TOKEN)",
+    "(with MySQL)",
+    "(with REACT & SQLite3)",
+    "(with REACT & SQLite3 & DOCKER)",
+    "(with REACT pay by Stripe)",
+    "(with classic HTML)",
+    "(Implement private ChatGPT with Next.js MongoDB Tailwind deployed on Vercel)",
+  ];
+}
+function imageTittle() {
+  return [
+    "Blackberry...",
+    "Grimming...",
+    "Ratrak...",
+    "Sender butterfly...",
+    "Duck and junior ducks...",
+    "Cloud ocean at sunset...",
+    "To be, or not to be, that is the question...",
+    "The final purpose...",
+    "Unusual exhibition in Paris (2006)...",
+    "A stream and ice (2017)...",
+    "Wild strawberries...",
+  ];
+}
+function contentsIndex() {
+  return [10, 9, 8, 0, 7, 6, 1, 2, 3, 4, 5];
+}
+
 $(".mainBTN").mouseenter(function () {
   $(".mainBTN").css("color", "red");
   $(".mainBTN").css("cursor", "pointer");
@@ -41,3 +170,23 @@ $(".mainBTN").mouseleave(function () {
   $(".mainBTN").css("color", "white");
   $(".mainBTN").css("font-size", "2.5rem");
 });
+
+const languageSelect = () => {
+  /* lang ? (lang = "HU") : (lang = "EN"); */
+  lang = lang === "HU" ? "EN" : "HU";
+  localStorage.setItem("language", lang);
+  //console.log("lang: 👍 & klikkeltem!!!", lang);
+  document.getElementById("langIcon").innerHTML =
+    lang == "HU" ? flagEN : flagHU;
+  render();
+};
+
+function render() {
+  cTittle = contentsTittle();
+  cTool = contentsTool();
+  cIndex = contentsIndex();
+  cImage = imageTittle();
+
+  HTMLcontentCode();
+  //window.location.reload();
+}
