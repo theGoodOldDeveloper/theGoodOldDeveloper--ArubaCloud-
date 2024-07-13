@@ -139,7 +139,7 @@ function contentsTool() {
     "(with REACT & SQLite3 & DOCKER)",
     "(with REACT pay by Stripe)",
     "(with classic HTML)",
-    "(Implement private ChatGPT with Next.js MongoDB Tailwind deployed on Vercel)",
+    "(Implement private ChatGPT with Next.js MongoDB Tailwind Auth0 deployed on Vercel)",
   ];
 }
 function imageTittle() {
