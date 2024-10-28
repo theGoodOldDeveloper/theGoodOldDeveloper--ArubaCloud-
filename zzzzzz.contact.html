@@ -1,0 +1,97 @@
+<!--//BUG Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-5 background-container-modal text-center">
+          <div class="modal-header">
+            <h5 class="modal-title form-label text-primary p-3 h4 rounded-2" id="contactModalLabel" style="background-color: rgba(0, 0, 0, 0.6)">
+              Kapcsolatfelvétel
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm">
+              <div class="mb-3">
+                <label
+                  for="name"
+                  class="form-label text-warning p-3 h4 rounded-2"
+                  style="background-color: rgba(0, 0, 0, 0.6)"
+                  >Hogyan szólíthatlak?</label
+                >
+                <input type="text" class="form-control" id="name" required title="Hogyan szeretnéd, hogy szólítsalak?"/>
+              </div>
+              
+              <div class="mb-3">
+                <label
+                  for="email"
+                  class="form-label text-warning p-3 h4 rounded-2"
+                  style="background-color: rgba(0, 0, 0, 0.6)"
+                  >Email címed, hogy tudjak válaszolni</label
+                >
+                <input type="email" class="form-control" id="email" required title="Email címed, ha gyors választ szeretnél."/>
+              </div>
+              <div class="mb-3"></div>
+                <label
+                  for="phone"
+                  class="form-label text-warning p-3 h4 rounded-2"
+                  style="background-color: rgba(0, 0, 0, 0.6)"
+                  >Ha visszahívást kérsz, hol érhetlek utol telefonon?</label
+                >
+                <!--<input type="tel" class="form-control" id="phone" required />-->
+
+                <input 
+                type="tel" 
+                class="form-control" 
+                id="phone" 
+                name="phone"
+                pattern="[0-9]{2}[0-9]{7}"
+                placeholder="+36201234567"
+                title="Kérlek, add meg a telefonszámod ebben a formátumban: +36201234567! Elképzelhető, hogy a visszahívás néhány napba is beletelik."
+            >
+
+              </div>
+              <div class="mb-3">
+                <label
+                  for="message"
+                  class="form-label text-warning p-3 h4 rounded-2"
+                  style="background-color: rgba(0, 0, 0, 0.6)"
+                  onclick="test()"
+                  >Tervezel valamit? Írd le, és közösen megvalósítjuk! 😊</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  required
+                  title="Van egy fejlesztési ötleted vagy problémád? Írd le, és megbeszéljük a lehetőségeket! (Frontend, Backend, DevOps - bármiben segítek) 🚀"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              onclick="test()"
+            >
+              Bezárás
+            </button>
+            <button type="button" class="btn btn-primary" onclick="sendEmail()">
+              Küldés
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//BUG Modal -->

@@ -10,6 +10,36 @@ body {
   background-color: lightgrey;
 }
 
+
+
+.background-container {
+  min-height: 100vh;
+  
+  /*background-color: blue;*/
+  /*background-image: url("../img/contact-bkg.png ");*/
+  background-image: url("../img/DALL·E-websites-contact-page-0.webp ");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* 
+  vagy 'contain'
+  A background-size értékei lehetnek:
+
+cover: A kép kitölti a teljes területet, megtartva az arányait (esetleg levágva részeket)
+contain: A teljes kép látható lesz, megtartva az arányait (esetleg üres területekkel)
+  */
+}
+.background-container-modal {
+  
+  
+  min-height: 75vh;
+  background-image: url("../img/contact-bkg-1.png ");*/
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+
+
 .hamburger-icon {
   display: none;
 }
@@ -164,6 +194,7 @@ header {
 }
 
 .mainBTN {
+  border-radius: 6px;
   /* mix-blend-mode: difference; */
   background-color: rgba(0, 0, 0, 0.4);
   /* opacity: 33%; */

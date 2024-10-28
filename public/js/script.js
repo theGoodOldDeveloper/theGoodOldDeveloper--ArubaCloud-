@@ -190,3 +190,37 @@ function render() {
   HTMLcontentCode();
   //window.location.reload();
 }
+
+function test() {
+  console.log("test");
+}
+
+function sendEmail() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  fetch("/send-email", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ name, phone, email, message }),
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      // alert(data); // Sikeres küldés esetén megjelenít egy üzenetet
+      // Modal bezárása
+      const modal = bootstrap.Modal.getInstance(
+        document.getElementById("contactModal")
+      );
+      modal.hide();
+      // Form resetelése
+      document.getElementById("contactForm").reset();
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      // alert("Hiba történt az e-mail küldése során");
+    });
+}
