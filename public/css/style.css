@@ -10,11 +10,9 @@ body {
   background-color: lightgrey;
 }
 
-
-
 .background-container {
   min-height: 100vh;
-  
+
   /*background-color: blue;*/
   /*background-image: url("../img/contact-bkg.png ");*/
   background-image: url("../img/DALL·E-websites-contact-page-0.webp ");
@@ -29,16 +27,12 @@ contain: A teljes kép látható lesz, megtartva az arányait (esetleg üres ter
   */
 }
 .background-container-modal {
-  
-  
   min-height: 75vh;
-  background-image: url("../img/contact-bkg-1.png ");*/
-    background-position: center;
+  background-image: url("../img/contact-bkg-1.png ");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
-
-
 
 .hamburger-icon {
   display: none;
