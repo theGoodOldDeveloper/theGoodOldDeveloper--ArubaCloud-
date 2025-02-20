@@ -52,7 +52,7 @@
     </style>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        changeLanguage("hu");
+        changeLanguage("en");
       });
 
       function changeLanguage(lang) {
@@ -77,19 +77,6 @@
       }
 
       const translations = {
-        hu: {
-          title: "Digitális álmaid megvalósítója vagyok!",
-          button: "Kezdjünk egy beszélgetéssel 🔧",
-          mobile: "Mobil:",
-          projects: "Nézz bele a projektjeimbe! 👀",
-          modalTitle: "Ismerjük meg egymást!",
-          name: "Hogyan szólíthatlak?",
-          email: "Email címed",
-          phone: "Telefonszámod",
-          message: "Üzeneted",
-          close: "Bezárás",
-          send: "Küldés",
-        },
         en: {
           title: "I am the creator of your digital dreams!",
           button: "Let's start a conversation 🔧",
@@ -102,6 +89,19 @@
           message: "Your message",
           close: "Close",
           send: "Send",
+        },
+        hu: {
+          title: "Digitális álmaid megvalósítója vagyok!",
+          button: "Kezdjünk egy beszélgetéssel 🔧",
+          mobile: "Mobil:",
+          projects: "Nézz bele a projektjeimbe! 👀",
+          modalTitle: "Ismerjük meg egymást!",
+          name: "Hogyan szólíthatlak?",
+          email: "Email címed",
+          phone: "Telefonszámod",
+          message: "Üzeneted",
+          close: "Bezárás",
+          send: "Küldés",
         },
         fr: {
           title: "Je suis le créateur de vos rêves numériques!",
@@ -135,8 +135,8 @@
   <body class="background-container">
     <div class="container text-center">
       <select class="language-select" onchange="changeLanguage(this.value)">
-        <option value="hu">🇭🇺 Magyar</option>
         <option value="en">🇬🇧 English</option>
+        <option value="hu">🇭🇺 Magyar</option>
         <option value="fr">🇫🇷 Français</option>
         <option value="de">🇩🇪 Deutsch</option>
       </select>
