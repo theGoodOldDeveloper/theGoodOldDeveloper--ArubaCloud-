@@ -19,6 +19,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
+  res.redirect("https://the-good-old-developer.vercel.app/");
+});
+app.get("/works", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 app.get("/contact", (req, res) => {
@@ -39,7 +42,8 @@ const transporter = nodemailer.createTransport({
 // E-mail küldési endpoint
 app.post("/send-email", async (req, res) => {
   const { name, phone, email, message } = req.body;
-  const sendToEmail = "thegoodolddeveloper@gmail.com";
+  const sendToEmail = "assistant@thegoodolddeveloper.com";
+  // const sendToEmail = "thegoodolddeveloper@gmail.com";
   console.log("name: ", name);
   console.log("phone: ", phone);
   console.log("email: ", email);
