@@ -103,32 +103,6 @@
           close: "Close",
           send: "Send",
         },
-        fr: {
-          title: "Je suis le créateur de vos rêves numériques!",
-          button: "Commençons une conversation 🔧",
-          mobile: "Mobile:",
-          projects: "Découvrez mes projets! 👀",
-          modalTitle: "Faisons connaissance!",
-          name: "Comment puis-je vous appeler?",
-          email: "Votre email",
-          phone: "Votre numéro de téléphone",
-          message: "Votre message",
-          close: "Fermer",
-          send: "Envoyer",
-        },
-        de: {
-          title: "Ich bin der Schöpfer Ihrer digitalen Träume!",
-          button: "Lass uns ein Gespräch beginnen 🔧",
-          mobile: "Mobil:",
-          projects: "Schauen Sie sich meine Projekte an! 👀",
-          modalTitle: "Lernen wir uns kennen!",
-          name: "Wie kann ich Sie ansprechen?",
-          email: "Ihre E-Mail-Adresse",
-          phone: "Ihre Telefonnummer",
-          message: "Ihre Nachricht",
-          close: "Schließen",
-          send: "Senden",
-        },
       };
     </script>
   </head>
@@ -137,8 +111,6 @@
       <select class="language-select" onchange="changeLanguage(this.value)">
         <option value="hu">🇭🇺 Magyar</option>
         <option value="en">🇬🇧 English</option>
-        <option value="fr">🇫🇷 Français</option>
-        <option value="de">🇩🇪 Deutsch</option>
       </select>
       <div class="card m-5 p-4" style="background-color: rgba(0, 0, 0, 0.4)">
         <h1 class="text-warning" data-lang="title"></h1>
@@ -174,7 +146,6 @@
                 <label
                   for="name"
                   class="form-label text-warning"
-                  style="background-color: rgba(0, 0, 0, 0.6)"
                   data-lang="name"
                 ></label>
                 <input type="text" class="form-control" id="name" required />
@@ -183,38 +154,14 @@
                 <label
                   for="email"
                   class="form-label text-warning"
-                  style="background-color: rgba(0, 0, 0, 0.6)"
                   data-lang="email"
                 ></label>
                 <input type="email" class="form-control" id="email" required />
               </div>
-
-              <div class="mb-3"></div>
-              <label
-                for="phone"
-                class="form-label text-warning"
-                style="background-color: rgba(0, 0, 0, 0.6)"
-                data-lang="phone"
-              >
-                <!-- >Ha visszahívást kérsz, hol érhetlek utol telefonon? -->
-              </label>
-              <!--<input type="tel" class="form-control" id="phone" required />-->
-
-              <input
-                type="tel"
-                class="form-control"
-                id="phone"
-                name="phone"
-                pattern="[0-9]{2}[0-9]{7}"
-                placeholder="+36201234567"
-                title="Kérlek, add meg a telefonszámod ebben a formátumban: +36201234567! Elképzelhető, hogy a visszahívás néhány napba is beletelik."
-              />
-
               <div class="mb-3">
                 <label
                   for="message"
                   class="form-label text-warning"
-                  style="background-color: rgba(0, 0, 0, 0.6)"
                   data-lang="message"
                 ></label>
                 <textarea
