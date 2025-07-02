@@ -30,6 +30,13 @@
           font-size: 1rem;
           padding: 0.5rem;
         }
+        .animated-email {
+          font-size: 1.1rem !important;
+          word-break: break-all;
+          white-space: normal;
+          padding: 0.2rem 0.5rem;
+          margin-top: 0.5rem;
+        }
       }
       .modal-content {
         background-image: url("/img/contact-bkg-1.png");
@@ -48,6 +55,39 @@
       }
       .language-select:hover {
         background-color: #e6b800;
+      }
+      .animated-email {
+        font-size: 1rem !important;
+        font-weight: bold;
+        color: #ffcc00;
+        text-shadow: 0 0 10px #fff700, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        animation: glow 2s infinite alternate;
+        display: inline-block;
+        background: linear-gradient(90deg, #ffcc00, #fff700, #ffcc00);
+        background-size: 200% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        animation: gradientMove 3s linear infinite, glow 2s infinite alternate;
+      }
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff700, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+        }
+        to {
+          text-shadow: 0 0 20px #fff700, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+        }
+      }
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
       }
     </style>
     <script>
@@ -140,6 +180,7 @@
         <option value="fr">🇫🇷 Français</option>
         <option value="de">🇩🇪 Deutsch</option>
       </select>
+      
       <div class="card m-5 p-4" style="background-color: rgba(0, 0, 0, 0.4)">
         <h1 class="text-warning" data-lang="title"></h1>
         <button
@@ -149,6 +190,7 @@
         ></button>
         <h2 class="text-warning mt-4" data-lang="mobile"></h2>
         <h1 class="text-light">(+36 30) 9283-653</h1>
+        <div id="animatedEmail" class="animated-email mt-3"></div>
         <button
           class="btn btn-info w-100 btn-lg mt-3"
           onclick="window.location.href = '/works'"
@@ -246,5 +288,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      // Email animáció betűnként
+      document.addEventListener("DOMContentLoaded", function () {
+        const email = "tibor@thegoodolddeveloper.com";
+        const emailDiv = document.getElementById("animatedEmail");
+        if (emailDiv) {
+          emailDiv.innerHTML = "";
+          email.split("").forEach((char, i) => {
+            const span = document.createElement("span");
+            span.textContent = char;
+            span.style.opacity = 0;
+            span.style.transition = `opacity 0.2s ${i * 0.05}s`;
+            emailDiv.appendChild(span);
+          });
+          setTimeout(() => {
+            emailDiv.querySelectorAll("span").forEach((span) => {
+              span.style.opacity = 1;
+            });
+          }, 100);
+        }
+      });
+    </script>
   </body>
 </html>
