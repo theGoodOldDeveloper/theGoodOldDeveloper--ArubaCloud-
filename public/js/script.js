@@ -26,7 +26,8 @@ document.getElementById("app-10").addEventListener("click", () => {
   window.location.href = "https://chat-my-gpt-rho.vercel.app/";
 });
 document.getElementById("app-0").addEventListener("click", () => {
-  window.location.href = "https://thegoodolddeveloper.com/snippet";
+  window.location.href = "https://snippets-psi-cyan.vercel.app/";
+  //window.location.href = "https://thegoodolddeveloper.com/snippet";
 });
 document.getElementById("app-1").addEventListener("click", () => {
   window.location.href = "http://156.67.29.41:7777/";
