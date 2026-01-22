@@ -26,28 +26,28 @@ document.getElementById("app-10").addEventListener("click", () => {
   window.location.href = "https://chat-my-gpt-rho.vercel.app/";
 });
 document.getElementById("app-0").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:5123/";
+  window.location.href = "https://thegoodolddeveloper.com/snippet";
 });
 document.getElementById("app-1").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:7777/";
+  window.location.href = "http://156.67.29.41:7777/";
 });
 document.getElementById("app-2").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:7766/";
+  window.location.href = "http://156.67.29.41:7766/";
 });
 document.getElementById("app-3").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:3333/";
+  window.location.href = "http://156.67.29.41:3333/";
 });
 document.getElementById("app-4").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:9876/";
+  window.location.href = "http://156.67.29.41:9876/";
 });
 document.getElementById("app-5").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:9999/";
+  window.location.href = "http://156.67.29.41:9999/";
 });
 document.getElementById("app-6").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:5011/";
+  window.location.href = "http://156.67.29.41:5011/";
 });
 document.getElementById("app-7").addEventListener("click", () => {
-  window.location.href = "http://80.211.204.154:5001/";
+  window.location.href = "http://156.67.29.41:5001/";
 });
 document.getElementById("app-8").addEventListener("click", () => {
   window.location.href = "https://photovegh.synology.me/";
