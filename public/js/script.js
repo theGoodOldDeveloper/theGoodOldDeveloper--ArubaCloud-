@@ -26,7 +26,7 @@ document.getElementById("app-10").addEventListener("click", () => {
   window.location.href = "https://chat-my-gpt-rho.vercel.app/";
 });
 document.getElementById("app-0").addEventListener("click", () => {
-  window.location.href = "https://snippets-psi-cyan.vercel.app/";
+  window.location.href = "https://portfolio.thegoodolddeveloper.cloud/";
   //window.location.href = "https://thegoodolddeveloper.com/snippet";
 });
 document.getElementById("app-1").addEventListener("click", () => {
@@ -100,7 +100,7 @@ function HTMLcontentCode() {
 function contentsTittle() {
   if (lang == "EN") {
     return [
-      "This is a code snippet repository...",
+      "Chatbots that Speak Your Customers' Language...",
       "This is a 'pub counter-terminal' for touchscreen...",
       "This is the admin of the 'pub counter-terminal'...",
       "This is the inventory taker at the 'pub counter-terminal'...",
@@ -114,7 +114,7 @@ function contentsTittle() {
     ];
   } else {
     return [
-      "Ez egy privát repository...",
+      "Chatbotok, amik a vásárlóid nyelvén szólnak...",
       "Ez egy pultos terminál touchscreen-re...",
       "Ez a pultos terminál ADMIN-ja...",
       "Ez a pultos terminál leltár appja...",
