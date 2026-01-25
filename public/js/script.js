@@ -43,7 +43,7 @@ document.getElementById("app-4").addEventListener("click", () => {
   window.location.href = "http://156.67.29.41:9876/";
 });
 document.getElementById("app-5").addEventListener("click", () => {
-  window.location.href = "http://156.67.29.41:9999/";
+  window.location.href = "https://foglalom.eu/";
 });
 document.getElementById("app-6").addEventListener("click", () => {
   window.location.href = "https://snippets-psi-cyan.vercel.app/";
