@@ -30,7 +30,8 @@ document.getElementById("app-0").addEventListener("click", () => {
   //window.location.href = "https://thegoodolddeveloper.com/snippet";
 });
 document.getElementById("app-1").addEventListener("click", () => {
-  window.location.href = "http://156.67.29.41:7777/";
+  window.location.href = "https://index.hu";
+  //window.location.href = "https://snippets-psi-cyan.vercel.app/";
 });
 document.getElementById("app-2").addEventListener("click", () => {
   window.location.href = "http://156.67.29.41:7766/";
@@ -45,10 +46,12 @@ document.getElementById("app-5").addEventListener("click", () => {
   window.location.href = "http://156.67.29.41:9999/";
 });
 document.getElementById("app-6").addEventListener("click", () => {
-  window.location.href = "http://156.67.29.41:5011/";
+  window.location.href = "https://snippets-psi-cyan.vercel.app/";
+
+  //window.location.href = "http://156.67.29.41:5011/";
 });
 document.getElementById("app-7").addEventListener("click", () => {
-  window.location.href = "http://156.67.29.41:5001/";
+  window.location.href = "https://snippets-psi-cyan.vercel.app/";
 });
 document.getElementById("app-8").addEventListener("click", () => {
   window.location.href = "https://photovegh.synology.me/";
@@ -130,7 +133,8 @@ function contentsTittle() {
 }
 function contentsTool() {
   return [
-    "(Next.js & Tailwind & SQLite3)",
+    // snippett"(Next.js & Tailwind & SQLite3)",
+    "(OpenAI, ChatBot)",
     "(login code 0, 11, 2 or 3)",
     ".",
     ".",
@@ -214,7 +218,7 @@ function sendEmail() {
       // alert(data); // Sikeres küldés esetén megjelenít egy üzenetet
       // Modal bezárása
       const modal = bootstrap.Modal.getInstance(
-        document.getElementById("contactModal")
+        document.getElementById("contactModal"),
       );
       modal.hide();
       // Form resetelése
