@@ -34,10 +34,10 @@ document.getElementById("app-1").addEventListener("click", () => {
   //window.location.href = "https://snippets-psi-cyan.vercel.app/";
 });
 document.getElementById("app-2").addEventListener("click", () => {
-  window.location.href = "https://thegoodolddeveloper.com/";
+  window.location.href = "https://doomester.hu/";
 });
 document.getElementById("app-3").addEventListener("click", () => {
-  window.location.href = "https://thegoodolddeveloper.com/";
+  window.location.href = "https://tagozat.hu/";
 });
 document.getElementById("app-4").addEventListener("click", () => {
   window.location.href = "https://thegoodolddeveloper.com/";
@@ -103,8 +103,8 @@ function contentsTittle() {
     return [
       "Chatbots that Speak Your Customers' Language...",
       "TheGoodOldDeveloper.com...",
-      "Hmmm...",
-      "Hmmm...",
+      "Digital Smart Home Master",
+      "TAGozat",
       "Hmmm...",
       "Hmmm...",
       "This is foglalom.eu...",
@@ -117,8 +117,8 @@ function contentsTittle() {
     return [
       "Chatbotok, amik a vásárlóid nyelvén szólnak...",
       "TheGoodOldDeveloper.com...",
-      "Hmmm...",
-      "Hmmm...",
+      "Digitális Okos Otthon Mester",
+      "TAGozat",
       "Hmmm...",
       "Hmmm...",
       "Ez a foglalom.eu...",
@@ -134,8 +134,8 @@ function contentsTool() {
     // snippett"(Next.js & Tailwind & SQLite3)",
     "(OpenAI, ChatBot)",
     "(website)",
-    ".",
-    ".",
+    "DOOMester",
+    "The Artifical Intelligence Generation",
     ".",
     ".",
     "(Booking time)",
