@@ -30,20 +30,20 @@ document.getElementById("app-0").addEventListener("click", () => {
   //window.location.href = "https://thegoodolddeveloper.com/snippet";
 });
 document.getElementById("app-1").addEventListener("click", () => {
-  window.location.href = "https://index.hu";
+  window.location.href = "https://thegoodolddeveloper.com/";
   //window.location.href = "https://snippets-psi-cyan.vercel.app/";
 });
 document.getElementById("app-2").addEventListener("click", () => {
-  window.location.href = "http://156.67.29.41:7766/";
+  window.location.href = "https://thegoodolddeveloper.com/";
 });
 document.getElementById("app-3").addEventListener("click", () => {
-  window.location.href = "http://156.67.29.41:3333/";
+  window.location.href = "https://thegoodolddeveloper.com/";
 });
 document.getElementById("app-4").addEventListener("click", () => {
-  window.location.href = "http://156.67.29.41:9876/";
+  window.location.href = "https://thegoodolddeveloper.com/";
 });
 document.getElementById("app-5").addEventListener("click", () => {
-  window.location.href = "https://foglalom.eu/";
+  window.location.href = "https://thegoodolddeveloper.com/";
 });
 document.getElementById("app-6").addEventListener("click", () => {
   window.location.href = "https://foglalom.eu/";
@@ -102,13 +102,13 @@ function contentsTittle() {
   if (lang == "EN") {
     return [
       "Chatbots that Speak Your Customers' Language...",
-      "This is a 'pub counter-terminal' for touchscreen...",
-      "This is the admin of the 'pub counter-terminal'...",
-      "This is the inventory taker at the 'pub counter-terminal'...",
-      "This is a REST API...",
-      "This is a BLOG...",
-      "This is an Address Book...",
-      "This is a Gym appointment booking...",
+      "TheGoodOldDeveloper.com...",
+      "Hmmm...",
+      "Hmmm...",
+      "Hmmm...",
+      "Hmmm...",
+      "This is foglalom.eu...",
+      "This is a Snippets repository...",
       "This is a Web Shop...",
       "This is wwwebPage...",
       "This is a private ChatGPT assistant...",
@@ -116,13 +116,13 @@ function contentsTittle() {
   } else {
     return [
       "Chatbotok, amik a vásárlóid nyelvén szólnak...",
-      "Ez egy pultos terminál touchscreen-re...",
-      "Ez a pultos terminál ADMIN-ja...",
-      "Ez a pultos terminál leltár appja...",
-      "Ez egy REST API...",
-      "Ez egy személyes BLOG...",
-      "Ez egy Address Book...",
-      "Ez egy Gym időpontfoglaló...",
+      "TheGoodOldDeveloper.com...",
+      "Hmmm...",
+      "Hmmm...",
+      "Hmmm...",
+      "Hmmm...",
+      "Ez a foglalom.eu...",
+      "Ez egy Snippets repository...",
       "Ez egy Web Shop...",
       "Ez egy wwwebPage...",
       "Ez egy privát ChatGPT asszisztens...",
@@ -133,12 +133,12 @@ function contentsTool() {
   return [
     // snippett"(Next.js & Tailwind & SQLite3)",
     "(OpenAI, ChatBot)",
-    "(login code 0, 11, 2 or 3)",
+    "(website)",
     ".",
     ".",
-    "(with MongoDB and TOKEN)",
-    "(with MySQL)",
-    "(with REACT & SQLite3)",
+    ".",
+    ".",
+    "(Booking time)",
     "(with REACT & SQLite3 & DOCKER)",
     "(with REACT pay by Stripe)",
     "(with classic HTML)",
