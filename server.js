@@ -18,9 +18,13 @@ app.use(express.static("public/img"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// app.get("/", (req, res) => {
+//   res.redirect("https://the-good-old-developer.vercel.app/");
+// });
 app.get("/", (req, res) => {
-  res.redirect("https://the-good-old-developer.vercel.app/");
+  res.sendFile(__dirname + "/index.html");
 });
+//NOTE: ez a régi átirányításhoz kellett, de még nem töröltem el
 app.get("/works", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
