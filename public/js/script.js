@@ -40,7 +40,7 @@ document.getElementById("app-3").addEventListener("click", () => {
   window.location.href = "https://tagozat.hu/";
 });
 document.getElementById("app-4").addEventListener("click", () => {
-  window.location.href = "https://thegoodolddeveloper.com/";
+  window.location.href = "https://scope.thegoodolddeveloper.cloud/hu";
 });
 document.getElementById("app-5").addEventListener("click", () => {
   window.location.href = "https://thegoodolddeveloper.com/";
@@ -105,7 +105,7 @@ function contentsTittle() {
       "TheGoodOldDeveloper.com...",
       "Digital Smart Home Master",
       "TAGozat",
-      "Hmmm...",
+      "SCOPE & GO",
       "Hmmm...",
       "This is foglalom.eu...",
       "This is a Snippets repository...",
@@ -119,7 +119,7 @@ function contentsTittle() {
       "TheGoodOldDeveloper.com...",
       "Digitális Okos Otthon Mester",
       "TAGozat",
-      "Hmmm...",
+      "SCOPE & GO",
       "Hmmm...",
       "Ez a foglalom.eu...",
       "Ez egy Snippets repository...",
@@ -136,7 +136,7 @@ function contentsTool() {
     "(website)",
     "DOOMester",
     "The Artifical Intelligence Generation",
-    ".",
+    "SCan Order Pay & GO",
     ".",
     "(Booking time)",
     "(with REACT & SQLite3 & DOCKER)",
