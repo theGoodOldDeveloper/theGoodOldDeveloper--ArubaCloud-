@@ -43,13 +43,13 @@ document.getElementById("app-4").addEventListener("click", () => {
   window.location.href = "https://scope.thegoodolddeveloper.cloud/hu";
 });
 document.getElementById("app-5").addEventListener("click", () => {
-  window.location.href = "https://thegoodolddeveloper.com/";
+  window.location.href = "https://majdha.hu/";
 });
 document.getElementById("app-6").addEventListener("click", () => {
   window.location.href = "https://foglalom.eu/";
 });
 document.getElementById("app-7").addEventListener("click", () => {
-  window.location.href = "https://snippets-psi-cyan.vercel.app/";
+  window.location.href = "https://eszti.foglalom.eu/";
 });
 document.getElementById("app-8").addEventListener("click", () => {
   window.location.href = "https://photovegh.synology.me/";
@@ -106,9 +106,9 @@ function contentsTittle() {
       "Digital Smart Home Master",
       "TAGozat",
       "SCOPE & GO",
-      "Hmmm...",
+      "Akkor majd ha...",
       "This is foglalom.eu...",
-      "This is a Snippets repository...",
+      "This is a example pesronal booking time...",
       "This is a Web Shop...",
       "This is wwwebPage...",
       "This is a private ChatGPT assistant...",
@@ -120,9 +120,9 @@ function contentsTittle() {
       "Digitális Okos Otthon Mester",
       "TAGozat",
       "SCOPE & GO",
-      "Hmmm...",
+      "Akkor majd ha...",
       "Ez a foglalom.eu...",
-      "Ez egy Snippets repository...",
+      "Ez egy példa a személyes foglalási oldalra...",
       "Ez egy Web Shop...",
       "Ez egy wwwebPage...",
       "Ez egy privát ChatGPT asszisztens...",
@@ -137,9 +137,9 @@ function contentsTool() {
     "DOOMester",
     "The Artifical Intelligence Generation",
     "SCan Order Pay & GO",
-    ".",
+    "Amikor a halogatás művészete találkozik a valósággal",
     "(Booking time)",
-    "(with REACT & SQLite3 & DOCKER)",
+    "eszti.foglalom.eu",
     "(with REACT pay by Stripe)",
     "(with classic HTML)",
     "(Implement private ChatGPT with Next.js MongoDB Tailwind Auth0 deployed on Vercel)",
